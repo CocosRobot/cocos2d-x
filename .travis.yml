@@ -1,14 +1,13 @@
 matrix:
-  - secure: cHXOjAda+t2tmBVuVAiQfvhDN+unToO6hX1rc3dJeGDOk4rlQnylJacjA7o/enkWeHagbW2Ja4h7BxQz4h7dada8zEbIbEMK4VEHx6AWwQM+GIEqkJPv5g8k4P20MLpX4XyUwm/16btpnqgXlyd8Q3Zjh3Vui/5/VzwPnxUQEho=
-  - secure: U/JsyiSR9q+8wX1arfciy3BdbMQaKmgt48/9tiU7P2RQJ/FR2AHGq85sNGI/ZUxN4JPLGALEvkFMo4NYyJDUcsdRHZX3vbp5xbSSRaBigqJIj3HDxtlPVf2m/W2GzcfNNX1ACO18hSWH0d2yFlF263ZmvudzQIfqTESfjGQBzwA=
-  - secure: Wsngwo3jlZtvuPfr3RNhqrz/liNIhKYnlw4KYJO90gMQ9ZQKRTlMv2BMiPw/9lV+vgJQDRcFe7dKwtC86vk10EU7Ym2bhVmhMxi/AlmJXgavjmPVdizRT7rhX2Ry/Nb6hGRkH3WS0T3D/KG1+e7lP/TMB9bvo6/locLJ2A6Z1YI=
-  - secure: PGMnEvysYv9Mnjrof05v9MU41ZlVO7A7SQb4oLuYqhBf0stvZUVEF4fmkOcXRPAd4Cg41aAbtE8RyGaqIFaKHtjHFtTdisM9XVXqL+eMfv5L+8nFCk4S5Fi/ohglO+FBJ9X/NLfAfRZmlwJR+UedU5AJwqlQbKraNkyv/FmDMUc=
   include:
     # linux
     - os: linux
       env: 
         - BUILD_TARGET=linux 
         - GEN_BINDING_AND_COCOSFILE=true
+        - secure: oKSlzGHaDebDYMJdvAOG6dH2syKUiog3oxpRWM060ywPhG8Zs6XyOgun6VnRi89gkkAB4Vp4IQaZ2J3f1+0pQTJcs9fii1aG/G5IemXMJrNIp2doJTXzQ0jhsBMubDhWKet2RK+Y9saOirQHf1IOLoZXSLJhZ04ZEQkDoY48Ev0=
+        - secure: LO5Bo6yecMQBMtTE/JmUinUejeiYDz0ubTLRxSnOc307ItwZzCaVvY2ugTUYORW9wrhI3NMp0u/CmNJNS1g3/G/qUrkCFPZ94LRdmLyp1Gm5Vn0tHIUw3Lr8fLi+6FNZxaRX4L4i8OuJH7KvICILCXOLDSDWVjDQF5bysn6NaEM=
+        - secure: WamDtUxG+H+9TALHfxIUtDgRvtTdI7X31cH16FW4FFitdsFTo/GtubDKhvhd8jaMtpqmQ7FOTtn/gXCngP4USliuMjP8zYUkSaogJ039dFLXbNuPXUwA8dynmerolr35kUiqjXTv0zVakUbNeNHprBwj8+f10I+foxSst6hxCFs=
       language: cpp
       sudo: required
       addons:
