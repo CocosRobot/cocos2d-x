@@ -145,7 +145,7 @@ function generate_pull_request_for_binding_codes_and_cocosfiles()
 
     # generate cocos_files.json and check diff
     echo "Updates cocos_files.json"
-    ./generate-template-files.py
+    $COCOS2DX_ROOT/tools/travis-scripts/generate-template-files.py
     git diff FETCH_HEAD --stat --exit-code "$COCOSFILE_PATH"
     COCOSFILE_DIFF_RETVAL=$?
 
