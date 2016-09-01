@@ -237,7 +237,7 @@ function run_after_merge()
 # - generate cocos_files.json for template
 if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
     # only one job need to send PR, linux virtual machine has better performance
-    if [ $TRAVIS_OS_NAME == "linux" ] && [ $BUILD_TARGET == "linux" ]; then
+    if [ $TRAVIS_OS_NAME == "linux" ] && [ $GEN_BINDING_AND_COCOSFILE == "true" ]; then
         run_after_merge
     fi
 fi

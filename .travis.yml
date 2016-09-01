@@ -2,7 +2,7 @@ matrix:
   include:
     # linux
     - os: linux
-      env: BUILD_TARGET=linux
+      env: BUILD_TARGET=linux GEN_BINDING_AND_COCOSFILE=true
       language: cpp
       sudo: required
       addons:
